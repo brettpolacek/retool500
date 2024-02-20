@@ -34,4 +34,5 @@
     src="{{ current_user.profilePhotoUrl }}"
     style={{ ordered: [{ background: "automatic" }] }}
   />
+  <Text id="text1" value="New Branch Header" verticalAlign="center" />
 </Frame>

@@ -88,5 +88,10 @@
     "col": 4,
     "height": 8,
     "width": 7
+  },
+  "text1": {
+    "subcontainer": "header",
+    "row": 1,
+    "height": 0.6
   }
 }
