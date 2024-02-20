@@ -1,0 +1,74 @@
+<GlobalFunctions>
+  <SqlQueryUnified
+    id="getTableSize"
+    query={include("./lib/getTableSize.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="df2d1038-c23f-4518-9efe-79843a7bae1a"
+    resourceTypeOverride=""
+    warningCodes={[]}
+    workflowBlockPluginId={null}
+  />
+  <SqlQueryUnified
+    id="getInventory"
+    query={include("./lib/getInventory.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="df2d1038-c23f-4518-9efe-79843a7bae1a"
+    warningCodes={[]}
+    workflowBlockPluginId={null}
+  />
+  <SqlQueryUnified
+    id="updateInventory"
+    actionType="UPDATE_BY"
+    changeset={
+      '[{"key":"quantity","value":"{{table1.changesetArray[\'0\'].quantity}}"}]'
+    }
+    editorMode="gui"
+    filterBy={
+      '[{"key":"id","value":"{{table1.changesetArray[\'0\'].id}}","operation":"="}]'
+    }
+    resourceDisplayName="retool_db"
+    resourceName="df2d1038-c23f-4518-9efe-79843a7bae1a"
+    runWhenModelUpdates={false}
+    tableName="inventory"
+    workflowBlockPluginId={null}
+  />
+  <SqlQueryUnified
+    id="deleteInventory"
+    actionType="DELETE_BY"
+    confirmationMessage="## Are you sure you want to delete inventory item SKU: {{table1.selectedRow.sku}}?"
+    editorMode="gui"
+    filterBy={
+      '[{"key":"id","value":"{{table1.selectedRow.id}}","operation":"="}]'
+    }
+    requireConfirmation={true}
+    resourceDisplayName="retool_db"
+    resourceName="df2d1038-c23f-4518-9efe-79843a7bae1a"
+    runWhenModelUpdates={false}
+    tableName="inventory"
+    workflowBlockPluginId={null}
+  />
+  <WorkflowRun
+    id="initiateReorderWorkflow"
+    resourceName="WorkflowRun"
+    resourceTypeOverride=""
+    workflowBlockPluginId={null}
+    workflowId="c20b8e40-3bc6-4a2b-aa1d-8a0240649376"
+    workflowParams={include("./lib/initiateReorderWorkflow.json", "string")}
+    workflowRunBodyType="json"
+  />
+  <SqlQueryUnified
+    id="getVendors"
+    query={include("./lib/getVendors.sql", "string")}
+    resourceDisplayName="retool_db"
+    resourceName="df2d1038-c23f-4518-9efe-79843a7bae1a"
+    warningCodes={[]}
+    workflowBlockPluginId={null}
+  />
+  <RESTQuery
+    id="query7"
+    notificationDuration={4.5}
+    resourceDisplayName="Adobe PDF Embed"
+    resourceName="aebcf3bc-5270-4a48-9cc2-c0c5a972059b"
+    showSuccessToaster={false}
+  />
+</GlobalFunctions>

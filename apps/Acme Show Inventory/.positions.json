@@ -1,0 +1,92 @@
+{
+  "avatar1": {
+    "subcontainer": "header",
+    "col": 9,
+    "height": 0.2
+  },
+  "chart1": {
+    "row": 9,
+    "col": 5,
+    "height": 7,
+    "width": 7
+  },
+  "container1": {
+    "row": 25.4,
+    "height": 0.2,
+    "width": 5
+  },
+  "container2": {
+    "container": "listView1",
+    "height": 1,
+    "width": 12
+  },
+  "containerTitle1": {
+    "container": "container1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "containerTitle2": {
+    "container": "container2",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "keyValue1": {
+    "row": 17.8,
+    "col": 5,
+    "height": 8.6,
+    "width": 4
+  },
+  "listView1": {
+    "container": "container1",
+    "subcontainer": "7fa65",
+    "height": 8,
+    "width": 12
+  },
+  "multiselect1": {
+    "row": 16,
+    "col": 6,
+    "height": 0.2,
+    "width": 4
+  },
+  "multiselectListbox1": {
+    "row": 18,
+    "height": 4
+  },
+  "navigation1": {
+    "subcontainer": "header",
+    "height": 0.8,
+    "width": 5
+  },
+  "nextButton1": {
+    "container": "steppedContainer1",
+    "rowGroup": "footer",
+    "col": 8,
+    "height": 1,
+    "width": 4
+  },
+  "prevButton1": {
+    "container": "steppedContainer1",
+    "rowGroup": "footer",
+    "height": 1,
+    "width": 4
+  },
+  "steppedContainer1": {
+    "row": 5.2,
+    "height": 0.2,
+    "width": 4
+  },
+  "steps1": {
+    "container": "steppedContainer1",
+    "rowGroup": "header",
+    "height": 0.6,
+    "width": 12
+  },
+  "table1": {
+    "row": 0.4,
+    "col": 4,
+    "height": 8,
+    "width": 7
+  }
+}
