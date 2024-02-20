@@ -1,0 +1,69 @@
+{
+  "button1": {
+    "row": 9,
+    "col": 1,
+    "height": 1,
+    "width": 2
+  },
+  "button2": {
+    "row": 9,
+    "col": 3,
+    "height": 1,
+    "width": 2
+  },
+  "chart1": {
+    "container": "modal1",
+    "height": 8,
+    "width": 12
+  },
+  "chart2": {
+    "container": "table2",
+    "height": 7,
+    "width": 9
+  },
+  "chart3": {
+    "row": 40.4,
+    "col": 1,
+    "height": 7,
+    "width": 6
+  },
+  "image1": {
+    "row": 36.2,
+    "col": 2,
+    "height": 3,
+    "width": 2
+  },
+  "modal1": {
+    "row": 11.8,
+    "col": 6,
+    "height": 1
+  },
+  "multiselectListbox1": {
+    "row": 13.2,
+    "col": 9,
+    "height": 4
+  },
+  "table1": {
+    "row": 1,
+    "col": 1,
+    "height": 8,
+    "width": 10
+  },
+  "table2": {
+    "row": 13.4,
+    "col": 1,
+    "height": 12,
+    "width": 8
+  },
+  "table3": {
+    "row": 26.6,
+    "col": 1,
+    "height": 8,
+    "width": 8
+  },
+  "text1": {
+    "row": 0.4,
+    "col": 1,
+    "height": 0.6
+  }
+}
