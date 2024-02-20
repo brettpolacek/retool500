@@ -1,0 +1,5 @@
+[
+  { "key": "sku", "value": "{{table1.selectedRow.sku}}" },
+  { "key": "quantity", "value": "{{(Math.abs(table1.selectedRow.delta))}}" },
+  { "key": "location", "value": "{{table1.selectedRow.location}}" }
+]
