@@ -231,6 +231,7 @@
         waitType="debounce"
       />
     </Table>
+    <Button id="button2" styleVariant="solid" text="Brett-Branch-newcommit" />
     <Container
       id="steppedContainer1"
       currentViewKey="{{ self.viewKeys[0] }}"
@@ -350,6 +351,7 @@
       xAxisDropdown="sku"
       xAxisTitle="SKU"
     />
+    <Button id="button1" styleVariant="solid" text="new commit" />
     <Multiselect
       id="multiselect1"
       emptyMessage="No options"
