@@ -633,7 +633,7 @@
       labelPosition="top"
       minLines="30"
       placeholder="Open format entry"
-      value="{{getSpecialInfo.data.text}}"
+      value="{{getSpecialInfo.data.text[0]}}"
     />
     <Button id="specialButton" styleVariant="solid" text="Save">
       <Event
