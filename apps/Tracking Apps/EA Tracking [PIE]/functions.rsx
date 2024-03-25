@@ -100,6 +100,15 @@
       waitMs="0"
       waitType="debounce"
     />
+    <Event
+      event="success"
+      method="hide"
+      params={{ ordered: [] }}
+      pluginId="newProjectModal"
+      type="widget"
+      waitMs="0"
+      waitType="debounce"
+    />
   </SqlQueryUnified>
   <State
     id="customerVariable"
