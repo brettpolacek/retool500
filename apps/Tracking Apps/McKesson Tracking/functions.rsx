@@ -39,7 +39,7 @@
     id="newRequestRecord"
     actionType="INSERT"
     changeset={
-      '[{"key":"account_name","value":"{{ customerVariable.value }}"},{"key":"name","value":"{{textInput1.value}}"},{"key":"priority","value":"{{select1.value}}"},{"key":"weekly_update","value":"{{textInput2.value}}"},{"key":"status","value":"{{select2.value}}"},{"key":"next_step","value":"{{textInput3.value}}"},{"key":"context","value":"{{textInput4.value == \'\' ? null: textInput4.value}}"},{"key":"linear","value":"{{textInput5.value == \'\' ? null: textInput5.value}}"},{"key":"gong_link","value":"{{textInput6.value == \'\' ? null : textInput6.value}}"}]'
+      '[{"key":"account_name","value":"{{ customerVariable.value }}"},{"key":"Name","value":"{{textInput1.value}}"},{"key":"priority","value":"{{select1.value}}"},{"key":"weekly_update","value":"{{textInput2.value}}"},{"key":"status","value":"{{select2.value}}"},{"key":"next_step","value":"{{textInput3.value}}"},{"key":"context","value":"{{textInput4.value == \'\' ? null: textInput4.value}}"},{"key":"linear","value":"{{textInput5.value == \'\' ? null: textInput5.value}}"},{"key":"gong_link","value":"{{textInput6.value == \'\' ? null : textInput6.value}}"}]'
     }
     changesetObject="{{newRequestForm.data}}"
     editorMode="gui"
@@ -54,15 +54,6 @@
       method="refresh"
       params={{ ordered: [] }}
       pluginId="resolvedRequestTable"
-      type="widget"
-      waitMs="0"
-      waitType="debounce"
-    />
-    <Event
-      event="success"
-      method="refresh"
-      params={{ ordered: [] }}
-      pluginId="activeRequestTable"
       type="widget"
       waitMs="0"
       waitType="debounce"
