@@ -179,6 +179,7 @@
           placeholder="Select an option"
           required={true}
           showSelectionIndicator={true}
+          value=""
           values={null}
         >
           <Option
@@ -186,28 +187,28 @@
             color="{{theme.highlight}}"
             disabled={false}
             hidden={false}
-            value="Q 1"
+            value="Q1"
           />
           <Option
             id="70ad8"
             color="#9BDE78"
             disabled={false}
             hidden={false}
-            value="Q 2"
+            value="Q2"
           />
           <Option
             id="bb62b"
             color="#58D8DE"
             disabled={false}
             hidden={false}
-            value="Q 3"
+            value="Q3"
           />
           <Option
             id="14abf"
             color="#BB7FD5"
             disabled={false}
             hidden={false}
-            value="Q 4"
+            value="Q4"
           />
           <Option
             id="ec140"
@@ -241,6 +242,15 @@
           text="Submit"
         />
       </Footer>
+      <Event
+        event="submit"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="newProjectRecord"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
     </Form>
   </Body>
 </ModalFrame>
