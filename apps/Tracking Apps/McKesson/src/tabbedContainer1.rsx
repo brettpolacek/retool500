@@ -634,17 +634,7 @@
       minLines="30"
       placeholder="Open format entry"
       value="{{getSpecialInfo.data.text[0]}}"
-    >
-      <Event
-        event="change"
-        method="trigger"
-        params={{ ordered: [] }}
-        pluginId="getSpecialInfo"
-        type="datasource"
-        waitMs="0"
-        waitType="debounce"
-      />
-    </TextArea>
+    />
     <Button id="specialButton" styleVariant="solid" text="Save">
       <Event
         event="click"
