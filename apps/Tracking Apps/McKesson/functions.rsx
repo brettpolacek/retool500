@@ -247,7 +247,17 @@
     showUpdateSetValueDynamicallyToggle={false}
     tableName="special_tracker"
     updateSetValueDynamically={true}
-  />
+  >
+    <Event
+      event="success"
+      method="confetti"
+      params={{ ordered: [] }}
+      pluginId=""
+      type="util"
+      waitMs="0"
+      waitType="debounce"
+    />
+  </SqlQueryUnified>
   <SqlQueryUnified
     id="updateLinks"
     actionType="UPDATE_BY"
