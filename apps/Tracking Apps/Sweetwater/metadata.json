@@ -1,0 +1,20 @@
+{
+  "toolscriptVersion": "1.0.0",
+  "version": "43.0.9",
+  "pageUuid": "a89ca464-ed10-11ee-9435-ebdfee3802a9",
+  "appTemplate": {
+    "appThemeId": "custom",
+    "notificationsSettings": {
+      "object": {
+        "globalQueryShowFailureToast": true,
+        "globalQueryShowSuccessToast": false,
+        "globalQueryToastDuration": 4.5,
+        "globalToastPosition": "bottom-right"
+      }
+    },
+    "appThemeName": "Custom app theme",
+    "shortlink": false,
+    "version": "3.41.0",
+    "experimentalDataTabEnabled": true
+  }
+}
