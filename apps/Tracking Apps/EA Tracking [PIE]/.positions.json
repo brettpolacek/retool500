@@ -25,6 +25,13 @@
     "height": 12.2,
     "width": 12
   },
+  "button1": {
+    "subcontainer": "header",
+    "row": 0.6,
+    "col": 4,
+    "height": 1,
+    "width": 2
+  },
   "circularImage1": {
     "subcontainer": "header",
     "height": 1.8,

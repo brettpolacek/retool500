@@ -17,4 +17,5 @@
     style={{ ordered: [{ borderRadius: "50%" }] }}
   />
   <Text id="customerName" value="## Electronic Arts" verticalAlign="center" />
+  <Button id="button1" text="Delete this Branch" />
 </Frame>

@@ -16,7 +16,6 @@
       itemMode="static"
       navigateContainer={true}
       style={{ ordered: [] }}
-      styleVariant="pill"
       targetContainerId="tabbedContainer1"
       value="{{ self.values[0] }}"
     >
@@ -324,7 +323,6 @@
     <Button
       id="newRequestButton"
       style={{ ordered: [] }}
-      styleVariant="solid"
       text="New Request/Bug"
     >
       <Event
@@ -608,7 +606,7 @@
         waitType="debounce"
       />
     </Table>
-    <Button id="newProjectButton" styleVariant="solid" text="New Project">
+    <Button id="newProjectButton" text="New Project">
       <Event
         event="click"
         method="show"
@@ -635,7 +633,7 @@
       placeholder="Open format entry"
       value="{{getSpecialInfo.data.text[0]}}"
     />
-    <Button id="specialButton" styleVariant="solid" text="Save">
+    <Button id="specialButton" text="Save">
       <Event
         event="click"
         method="trigger"

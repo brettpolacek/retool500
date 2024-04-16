@@ -13,8 +13,7 @@
       }
     },
     "appThemeName": "Custom app theme",
-    "shortlink": false,
-    "version": "3.41.0",
+    "version": "3.45.0",
     "experimentalDataTabEnabled": true
   }
 }
