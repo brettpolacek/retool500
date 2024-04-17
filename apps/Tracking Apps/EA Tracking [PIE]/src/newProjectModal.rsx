@@ -236,7 +236,6 @@
       <Footer>
         <Button
           id="formButton2"
-          styleVariant="solid"
           submit={true}
           submitTargetId="newProjectForm"
           text="Submit"

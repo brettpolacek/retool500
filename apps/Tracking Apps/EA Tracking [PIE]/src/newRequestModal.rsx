@@ -205,7 +205,6 @@
       <Footer>
         <Button
           id="formButton1"
-          styleVariant="solid"
           submit={true}
           submitTargetId="newRequestForm"
           text="Submit"
