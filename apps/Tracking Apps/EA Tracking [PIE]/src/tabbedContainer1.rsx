@@ -84,6 +84,20 @@
         summaryAggregationMode="none"
       />
       <Column
+        id="4d8d9"
+        alignment="left"
+        editable="true"
+        format="boolean"
+        groupAggregationMode="none"
+        key="new_request"
+        label="New?"
+        placeholder="Enter value"
+        position="center"
+        referenceId="new_request"
+        size={100}
+        summaryAggregationMode="none"
+      />
+      <Column
         id="bddfa"
         alignment="left"
         editable="true"
