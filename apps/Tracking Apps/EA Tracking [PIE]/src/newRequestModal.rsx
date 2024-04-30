@@ -1,0 +1,233 @@
+<ModalFrame
+  id="newRequestModal"
+  footerPadding="8px 12px"
+  headerPadding="8px 12px"
+  hidden={true}
+  hideOnEscape={true}
+  isHiddenOnMobile={true}
+  overlayInteraction={true}
+  padding="0"
+  showHeader={true}
+  showOverlay={true}
+  size="medium"
+>
+  <Header>
+    <Text id="modalTitle1" value="### New Request/Bug" verticalAlign="center" />
+    <Button
+      id="modalCloseButton1"
+      horizontalAlign="right"
+      iconBefore="bold/interface-delete-1"
+      style={{ ordered: [{ border: "transparent" }] }}
+      styleVariant="outline"
+    >
+      <Event
+        event="click"
+        method="setHidden"
+        params={{ ordered: [{ hidden: true }] }}
+        pluginId="newRequestModal"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Button>
+  </Header>
+  <Body>
+    <Form
+      id="newRequestForm"
+      footerPadding="4px 12px"
+      headerPadding="4px 12px"
+      initialData=""
+      padding="12px"
+      requireValidation={true}
+      resetAfterSubmit={true}
+      scroll={true}
+      showBody={true}
+      showBorder={false}
+      showFooter={true}
+    >
+      <Header>
+        <Text id="formTitle1" value="#### Form title" verticalAlign="center" />
+      </Header>
+      <Body>
+        <TextInput
+          id="textInput1"
+          formDataKey="Name"
+          label="Name"
+          labelPosition="top"
+          placeholder="Enter value"
+          required={true}
+        />
+        <Select
+          id="select1"
+          emptyMessage="No options"
+          formDataKey="priority"
+          itemMode="static"
+          label="Priority"
+          labelPosition="top"
+          labels={null}
+          overlayMaxHeight={375}
+          placeholder="Select an option"
+          required={true}
+          showSelectionIndicator={true}
+          values={null}
+        >
+          <Option
+            id="f9702"
+            color="{{theme.danger}}"
+            disabled={false}
+            hidden={false}
+            value="Highest"
+          />
+          <Option
+            id="3b2b6"
+            color="{{theme.warning}}"
+            disabled={false}
+            hidden={false}
+            value="High"
+          />
+          <Option
+            id="4efde"
+            color="{{ theme.highlight }}"
+            disabled={false}
+            hidden={false}
+            value="Medium"
+          />
+          <Option
+            id="a870e"
+            color="{{ theme.info }}"
+            disabled={false}
+            hidden={false}
+            value="Low"
+          />
+          <Option
+            id="28560"
+            color="#B0ADAD"
+            disabled={false}
+            hidden={false}
+            value="Resolved"
+          />
+        </Select>
+        <TextInput
+          id="textInput2"
+          formDataKey="weekly_update"
+          label="Weekly update"
+          labelPosition="top"
+          placeholder="Enter value"
+          required={true}
+        />
+        <Select
+          id="select2"
+          emptyMessage="No options"
+          formDataKey="status"
+          itemMode="static"
+          label="Status"
+          labelPosition="top"
+          labels={null}
+          overlayMaxHeight={375}
+          placeholder="Select an option"
+          required={true}
+          showSelectionIndicator={true}
+          values={null}
+        >
+          <Option
+            id="136b3"
+            color="#EB7878"
+            disabled={false}
+            hidden={false}
+            value="In Progress"
+          />
+          <Option
+            id="91c3e"
+            color="{{theme.highlight}}"
+            disabled={false}
+            hidden={false}
+            value="Triage"
+          />
+          <Option
+            id="51f66"
+            color="{{theme.success}}"
+            disabled={false}
+            hidden={false}
+            value="Resolved"
+          />
+          <Option
+            id="baafe"
+            color="{{theme.primary}}"
+            disabled={false}
+            hidden={false}
+            value="Blocked"
+          />
+          <Option
+            id="1fa1b"
+            color="{{theme.info}}"
+            disabled={false}
+            hidden={false}
+            value="Backlog"
+          />
+        </Select>
+        <TextInput
+          id="textInput3"
+          formDataKey="next_step"
+          label="Next step"
+          labelPosition="top"
+          placeholder="Enter Next Steps"
+          required={true}
+        />
+        <TextInput
+          id="textInput4"
+          formDataKey="context"
+          label="Slack"
+          labelPosition="top"
+          patternType="url"
+          placeholder="[your-slack-thread-here]"
+          textBefore="https://"
+        />
+        <TextInput
+          id="textInput5"
+          formDataKey="linear"
+          label="Linear"
+          labelPosition="top"
+          patternType="url"
+          placeholder="[your-linear-ticket-here]"
+          textBefore="https://"
+        />
+        <TextInput
+          id="textInput6"
+          formDataKey="gong_link"
+          label="Gong
+"
+          labelPosition="top"
+          patternType="url"
+          placeholder="[your-gong-link-here]"
+          textBefore="https://"
+        />
+      </Body>
+      <Footer>
+        <Button
+          id="formButton1"
+          submit={true}
+          submitTargetId="newRequestForm"
+          text="Submit"
+        />
+      </Footer>
+      <Event
+        event="submit"
+        method="trigger"
+        params={{ ordered: [] }}
+        pluginId="newRequestRecord"
+        type="datasource"
+        waitMs="0"
+        waitType="debounce"
+      />
+      <Event
+        event="submit"
+        method="hide"
+        params={{ ordered: [] }}
+        pluginId="newRequestModal"
+        type="widget"
+        waitMs="0"
+        waitType="debounce"
+      />
+    </Form>
+  </Body>
+</ModalFrame>
