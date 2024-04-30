@@ -16,6 +16,7 @@
       itemMode="static"
       navigateContainer={true}
       style={{ ordered: [] }}
+      styleVariant="pill"
       targetContainerId="tabbedContainer1"
       value="{{ self.values[0] }}"
     >
@@ -81,20 +82,6 @@
         placeholder="Enter value"
         position="center"
         size={180}
-        summaryAggregationMode="none"
-      />
-      <Column
-        id="4d8d9"
-        alignment="left"
-        editable="true"
-        format="boolean"
-        groupAggregationMode="none"
-        key="new_request"
-        label="New?"
-        placeholder="Enter value"
-        position="center"
-        referenceId="new_request"
-        size={100}
         summaryAggregationMode="none"
       />
       <Column
@@ -337,6 +324,7 @@
     <Button
       id="newRequestButton"
       style={{ ordered: [] }}
+      styleVariant="solid"
       text="New Request/Bug"
     >
       <Event
@@ -620,7 +608,7 @@
         waitType="debounce"
       />
     </Table>
-    <Button id="newProjectButton" text="New Project">
+    <Button id="newProjectButton" styleVariant="solid" text="New Project">
       <Event
         event="click"
         method="show"
@@ -647,7 +635,7 @@
       placeholder="Open format entry"
       value="{{getSpecialInfo.data.text[0]}}"
     />
-    <Button id="specialButton" text="Save">
+    <Button id="specialButton" styleVariant="solid" text="Save">
       <Event
         event="click"
         method="trigger"

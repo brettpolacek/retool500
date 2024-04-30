@@ -87,6 +87,7 @@
       <Footer>
         <Button
           id="formButton3"
+          styleVariant="solid"
           submit={true}
           submitTargetId="linksUpdate"
           text="Submit"
